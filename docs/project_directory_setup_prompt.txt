@@ -3,7 +3,7 @@ Within the 'GenAIxSysEng' directory, create the following file structure, leavin
 
 GenAIxSysEng/
 │
-├── .github/                        # this directory will contain JFK
+├── .github/                        # this directory will contain the Master prompt
 │   └── copilot-instructions.md     # see setup task d) (bonus task)
 │
 ├── docs/                           # this directory will contain documentation (left branch of V-model)
