@@ -1,0 +1,8 @@
+@workspace Please analyze the use cases and specifications defined in docs/use_cases.md.
+Based on this functional black-box perspective, derive the System Requirements for our system into 'docs/requirements.md'.
+Strictly apply the INCOSE rules defined in your system instructions.
+Please generate a Markdown document containing:
+A brief introductory sentence.
+A Markdown table of the derived requirements with the following exact columns:
+| Req ID | Requirement Name | Requirement Text | Type | Source | Verify Method |
+Make sure to extract the functional requirements directly from the use case "Main Scenarios". Additionally, logically deduce at least 2 or 3 necessary non-functional requirements (e.g., Performance, Interface, or Design Constraints) that must apply to such a system.

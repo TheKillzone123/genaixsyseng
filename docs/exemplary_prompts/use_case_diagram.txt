@@ -1,0 +1,17 @@
+@workspace Please analyze the following scenario for a new system.
+Identify the external actors and the use cases based on a strict black-box perspective.
+Then, generate the Mermaid diagram code and the textual specifications exactly as defined in your system instructions.
+"Develop an implementation prototype for a lightweight traffic light system, consisting of a Raspberry Pi and three colored LEDs (red, yelleo, and green, respectively).
+After booting, the system shall light up its LEDs, realizing the following traffic light cycle: red --> green --> yellow --> red.
+A user shall be able to press a toggle button and turn off all LEDs.
+Another button press shall restart the cycle, starting with red."
+
+
+--------------------------------------
+
+
+@use_cases.md Please adjust the use case diagram as follows:
+I think "Execute Traffic Light Cycle" should rather be "Watch Traffic Light Cycle".
+Also, the "Display X Light" use cases should be extensions or inclusions of the "Watch Traffic Light Cycle" use case.
+Please adjust those as well.
+Also, open question, does it make sense to draw similar relations between "Watch Traffic Light Cycle" and "Turn Off All Lights"/"Resume Traffig Light Cycle"?
