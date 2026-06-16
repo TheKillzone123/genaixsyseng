@@ -1,0 +1,8 @@
+@workspace Please analyze our traffic light system based on `docs/use_cases.md` and `docs/requirements.md`. 
+
+Within `docs/architectural_design.md`, model the dynamic system architecture in this file.
+Please generate the content strictly following the "BEHAVIOR MODELING RULES" from your system instructions.
+
+Create two sections in a single Markdown response:
+1. **System Level:** A State Machine Diagram (`stateDiagram-v2`) showing the super-states (Power_Off, Operating) and the standard traffic light cycle (Red, Green, Yellow). Include `do / Execute [Color] Activity` for each light phase. Add Traceability to our specific requirements and timing specifications below the diagram.
+2. **Module Level:** An Activity Diagram (`flowchart TD`) that explicitly refines the "Execute Red Activity". Show the exact sequence of turning the specific GPIO pins for the LEDs on and off to prevent electrical conflicts. Add Traceability linking back to the "Red_Phase" state.

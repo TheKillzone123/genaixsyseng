@@ -52,7 +52,31 @@ When prompted to generate (system) requirements, you must strictly follow these 
 5. Verifiability: Every requirement must be verifiable by one of the standard methods: Test, Analysis, Inspection, or Demonstration.
 
 
+<br>
+<br>
 
+
+## When Prompted to Generate or Edit Architecture Models
+
+
+When prompted to generate or edit architecture models, e.g., state machines or activity diagrams, you must strictly follow these structural and hierarchical rules:
+
+
+1. Document Structure (Text-Diagram-Text):
+Every diagram section in the Markdown file must consist of:
+* **Traceability:** A bulleted list explicitly linking to previously defined Use Cases (e.g., `UC-001`) or Requirements (e.g., `SYSR-002`).
+* **Description:** A brief prose explanation of the logic.
+* **Mermaid Diagram:** The code block containing the diagram.
+* **Specifications:** A bulleted list of technical details (e.g., timings like `t_red = 5s`, hardware constraints) that cannot be expressed graphically.
+
+
+2. Diagram Syntax (Mermaid.js):
+* System Level (State Machine): Use `stateDiagram-v2`. Utilize super-states and inner states if necessary. Model internal state activities strictly using the syntax: `State_Name : do / Execute [Activity Name]`.
+* Module Level (Activity Diagram): Use `flowchart TD` to show the logical sequence of an activity. Use `((Start))` and `((End))` for start/end nodes, and rectangular nodes `[Action]` for executable steps.
+
+
+3. Hierarchical Consistency (CRITICAL):
+When refining a state into an activity diagram, the title of the Activity Diagram MUST exactly match the `[Activity Name]` defined in the `do / ...` action of the higher-level State Machine.
 
 
 
